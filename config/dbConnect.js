@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-mongoose.connect("mongodb+srv://testuser:lfuImXaGbWPtyvi5@cluster0.ib9vudl.mongodb.net/livros-teste")
+mongoose.connect(${ENV.database.credencials})
 
 let db = mongoose.connection;
 
